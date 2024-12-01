@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Projects on Portfolio</title>
+        <link>http://localhost:1313/categories/projects/</link>
+        <description>Recent content in Projects on Portfolio</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <copyright>Paul Tomás</copyright>
+        <lastBuildDate>Tue, 11 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/projects/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Weather images directly from space</title>
+        <link>http://localhost:1313/projects/weather-images-from-space/</link>
+        <pubDate>Tue, 11 Jun 2024 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/projects/weather-images-from-space/</guid>
+        <description>&lt;img src="http://localhost:1313/projects/weather-images-from-space/featured.jpg" alt="Featured image of post Weather images directly from space" /&gt;&lt;h1 id=&#34;intro&#34;&gt;Intro
+&lt;/h1&gt;&lt;p&gt;This summer I got into ham radio with the &lt;a class=&#34;link&#34; href=&#34;https://www.rtl-sdr.com&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;RTL SDR&lt;/a&gt; dongle that turns your pc into a radio. With this cheap inexpensive dongle, you can listen to aircraft, listen to the local radio and, most importantly, you can listen to weather satellites.&lt;/p&gt;
+&lt;h1 id=&#34;story&#34;&gt;Story
+&lt;/h1&gt;&lt;p&gt;When I first heard about this I knew that I had to try it. There&amp;rsquo;s even people who &lt;a class=&#34;link&#34; href=&#34;https://www.rtl-sdr.com/tag/sstv/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;receive images from the ISS!&lt;/a&gt;
+When the antenna and the sdr dongle arrived, I quickly prepared and waited for the satellite to pass.
+&lt;img src=&#34;http://localhost:1313/projects/weather-images-from-space/Failure1.jpg&#34;
+	width=&#34;2080&#34;
+	height=&#34;1188&#34;
+	srcset=&#34;http://localhost:1313/projects/weather-images-from-space/Failure1_hu4302622199806436631.jpg 480w, http://localhost:1313/projects/weather-images-from-space/Failure1_hu3430952329889595995.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Failure&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;175&#34;
+		data-flex-basis=&#34;420px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;As you can see  this image is completely trash, because I tried receiving it from my balcony. I quickly discovered that in order to have great signal, I need open sky.&lt;/p&gt;
+&lt;p&gt;After other failed attempts, I changed my spot and went to the countryside. This time, I got a pretty good image from NOAA 15:
+&lt;img src=&#34;http://localhost:1313/projects/weather-images-from-space/FirstSuccessful.jpg&#34;
+	width=&#34;909&#34;
+	height=&#34;1197&#34;
+	srcset=&#34;http://localhost:1313/projects/weather-images-from-space/FirstSuccessful_hu15447533629111667467.jpg 480w, http://localhost:1313/projects/weather-images-from-space/FirstSuccessful_hu1649761087771618619.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;75&#34;
+		data-flex-basis=&#34;182px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;I will always remember how happy I was. I just received an image from a satellite! The rest of the summer I tried listening to more satellites and trying to have longer passes (longer images). With my current hardware, there are only NOAA and Meteor-M2 satellites that I can hear. There are also &lt;a class=&#34;link&#34; href=&#34;https://en.wikipedia.org/wiki/Geostationary_orbit&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;geostationary satellites&lt;/a&gt;, but I would need a dish antenna. This is because geostationary satellites are way further away from earth than &lt;a class=&#34;link&#34; href=&#34;https://en.wikipedia.org/wiki/Polar_orbit&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;polar-orbitting satellites&lt;/a&gt; (like NOAA and Meteor-M2).&lt;/p&gt;
+&lt;p&gt;Not only that but in europe the geostationary satellite (Meteosat) that we have is encrypted, and it&amp;rsquo;s impossible to get anything from there.
+&lt;img src=&#34;http://localhost:1313/projects/weather-images-from-space/europe_doesn%27t_have_geostationary_satellites.png&#34;
+	width=&#34;850&#34;
+	height=&#34;427&#34;
+	srcset=&#34;http://localhost:1313/projects/weather-images-from-space/europe_doesn%27t_have_geostationary_satellites_hu15880398510409282361.png 480w, http://localhost:1313/projects/weather-images-from-space/europe_doesn%27t_have_geostationary_satellites_hu9308092860114428463.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;europe_doesn&amp;rsquo;t_have_geostationary_satellites&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;199&#34;
+		data-flex-basis=&#34;477px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h1 id=&#34;the-process&#34;&gt;The process
+&lt;/h1&gt;&lt;p&gt;Let&amp;rsquo;s talk about how this is even possible:&lt;/p&gt;
+&lt;p&gt;Polar-orbiting satellites orbitate north-south and if we add the earth&amp;rsquo;s rotation we get this kind of movement
+&lt;img src=&#34;http://localhost:1313/projects/weather-images-from-space/Polar-orbit.gif&#34;
+	width=&#34;360&#34;
+	height=&#34;360&#34;
+	srcset=&#34;http://localhost:1313/projects/weather-images-from-space/Polar-orbit_hu7704475518305432036.gif 480w, http://localhost:1313/projects/weather-images-from-space/Polar-orbit_hu14227037859840489483.gif 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;100&#34;
+		data-flex-basis=&#34;240px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;To receive the signal from the satellite, the V-dipole antenna (120º angle) facing south or north.&lt;/p&gt;
+&lt;p&gt;On the software side, we need to use an sdr application like &lt;a class=&#34;link&#34; href=&#34;https://airspy.com&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Sdr#&lt;/a&gt; or &lt;a class=&#34;link&#34; href=&#34;https://www.sdrpp.org&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Sdr++&lt;/a&gt;.
+This is where you &lt;strong&gt;interface with the sdr dongle&lt;/strong&gt;, and where you tune the frequency.
+I chose Sdr++ because it works great with linux and that&amp;rsquo;s what my laptop is running.&lt;/p&gt;
+&lt;p&gt;Additionally, you need some kind of program that takes the signal recorded and decodes it into an image. For &lt;strong&gt;NOAA APT&lt;/strong&gt;, wxtoimg or noaa-apt work well.&lt;/p&gt;
+&lt;p&gt;However, I found it more comfortable to use &lt;a class=&#34;link&#34; href=&#34;https://github.com/SatDump/SatDump&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Satdump&lt;/a&gt;. It&amp;rsquo;s interface may look similar to sdr++ because they both use ImGui &lt;em&gt;(big fan!).&lt;/em&gt; But satdump is more specialized in decoding satellites. Note that everyone uses a different physical setup (antenna, dongle, laptop) and everyone has different software preferences.&lt;/p&gt;
+&lt;p&gt;When it comes to decoding satellite signals, the majority of satellites use digital encoding with error correction and higher resolution. This is what the Meteor series use. However there is also analog modulation used by NOAA 15, 18 and 19. Although they also transmit digital on other bands, I can&amp;rsquo;t listen to them with my antenna.&lt;/p&gt;
+&lt;p&gt;The reason we only can listen to these satellites is because they transmit images on the &lt;strong&gt;137 mhz&lt;/strong&gt; band, and that&amp;rsquo;s what our antenna is tuned to. You may ask yourself, &amp;ldquo;But why do so few satellites operate on these bands?&amp;rdquo; Well, it&amp;rsquo;s because it&amp;rsquo;s a pretty low band, meaning other ground stations can interfere with the signal.&lt;/p&gt;
+&lt;p&gt;We also need to cover how to know when are the satellites going to pass over our zone. For that I use either &lt;a class=&#34;link&#34; href=&#34;https://oz9aec.dk/gpredict/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;gpredict&lt;/a&gt; or &lt;a class=&#34;link&#34; href=&#34;https://n2yo.com&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;n2yo&lt;/a&gt;. These programs are also very useful for knowing if the pass is going to be good or not and not waste your time.&lt;/p&gt;
+&lt;p&gt;We can finally take a look at how the image is encoded and decoded. Assuming we got a good signal with not much interference, it should be great. Actually, for both digital and analog modulation, the image is sent by channels (r, g, b). &lt;strong&gt;NOAA APT&lt;/strong&gt; only sends 2 channels, but Meteor sends 3 channels, which gives more color accuracy. Also, meteor images give more detail &lt;em&gt;(1pixel / km)&lt;/em&gt; than &lt;strong&gt;NOAA&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;The advantage with &lt;strong&gt;NOAA APT&lt;/strong&gt; is that even if there is not a good signal, you are going to get some image with more or less noise. Meteor digital signal on the other hand uses error correction to try to solve interference, but when it fails, you get a black line.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s take a look at the best images I took this summer!&lt;/p&gt;
+&lt;p&gt;Meteor-M2:
+On this one we can clearly see &lt;a class=&#34;link&#34; href=&#34;https://www.google.com/maps/place/44%c2%b039%2738.6%22N&amp;#43;1%c2%b010%2706.5%22W/@44.6834736,-1.2139958,50378m/data=!3m1!1e3!4m4!3m3!8m2!3d44.66072!4d-1.16848!5m1!1e4?entry=ttu&amp;amp;g_ep=EgoyMDI0MTExMy4xIKXMDSoASAFQAw%3D%3D&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Arcachon&lt;/a&gt; in France. (Actually the image is compressed and smaller details get lost. This shows how much detail gives meteor)
+&lt;img src=&#34;http://localhost:1313/projects/weather-images-from-space/MeteorM2-2.jpg&#34;
+	width=&#34;2560&#34;
+	height=&#34;2121&#34;
+	srcset=&#34;http://localhost:1313/projects/weather-images-from-space/MeteorM2-2_hu4077324515141805565.jpg 480w, http://localhost:1313/projects/weather-images-from-space/MeteorM2-2_hu9880420203974892896.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Meteor M2&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;120&#34;
+		data-flex-basis=&#34;289px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;This one is also pretty good. You can see Istambul and if you look closely on France, you can even see a gray patch where Paris is located!
+&lt;img src=&#34;http://localhost:1313/projects/weather-images-from-space/MeteorM2-3.jpg&#34;
+	width=&#34;2552&#34;
+	height=&#34;1813&#34;
+	srcset=&#34;http://localhost:1313/projects/weather-images-from-space/MeteorM2-3_hu2301271999512093400.jpg 480w, http://localhost:1313/projects/weather-images-from-space/MeteorM2-3_hu4550288543995076713.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Meteor M2&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;140&#34;
+		data-flex-basis=&#34;337px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;Now let&amp;rsquo;s take a look at the &lt;em&gt;longest NOAA image I&amp;rsquo;ve ever taken&lt;/em&gt;:
+We can see from Groenland to the Canary islands!
+&lt;img src=&#34;http://localhost:1313/projects/weather-images-from-space/NOAA19.jpg&#34;
+	width=&#34;881&#34;
+	height=&#34;1600&#34;
+	srcset=&#34;http://localhost:1313/projects/weather-images-from-space/NOAA19_hu4182467868895345671.jpg 480w, http://localhost:1313/projects/weather-images-from-space/NOAA19_hu9939628993292393791.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Longest NOAA&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;55&#34;
+		data-flex-basis=&#34;132px&#34;
+	
+&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Game Engine</title>
+        <link>http://localhost:1313/projects/game-engine/</link>
+        <pubDate>Mon, 11 Mar 2024 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/projects/game-engine/</guid>
+        <description>&lt;img src="http://localhost:1313/projects/game-engine/Screenshot-1.png" alt="Featured image of post Game Engine" /&gt;&lt;h2 id=&#34;description--why&#34;&gt;Description &amp;amp; Why?
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;The engine is designed support both 2D and 3D rendering through OpenGL, with a responsive and modern looking editor interface. It&amp;rsquo;s cross platform, running on both Windows and Linux. I try to rely as less as possible on platform-specific code. Currently, the engine supports serialization, basic rendering and asset management.&lt;/li&gt;
+&lt;li&gt;The main purpose of this engine is to teach myself about game engine architecture and take a look at how they work under the hood.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;screenshots&#34;&gt;Screenshots
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/projects/game-engine/Screenshot-3.png&#34;
+	width=&#34;1920&#34;
+	height=&#34;1009&#34;
+	srcset=&#34;http://localhost:1313/projects/game-engine/Screenshot-3_hu16658046050754438996.png 480w, http://localhost:1313/projects/game-engine/Screenshot-3_hu3118190299222362787.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;190&#34;
+		data-flex-basis=&#34;456px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;main-features&#34;&gt;Main features
+&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;- Works on windows and linux&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;- Editor:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A responsive UI made with dear ImGui&lt;/li&gt;
+&lt;li&gt;Like with any modern application, you can dock and arrange windows to your liking&lt;/li&gt;
+&lt;li&gt;The scene hierarchy panel integrates seamlessly with the ECS&lt;/li&gt;
+&lt;li&gt;Drag and drop features&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;- Graphics:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;OpenGL based rendering&lt;/li&gt;
+&lt;li&gt;2D and 3D renderer&lt;/li&gt;
+&lt;li&gt;Material system&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;- ECS:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Custom ECS (Entity Component System) framework&lt;/li&gt;
+&lt;li&gt;Cache friendly implementation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;- Serialization:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The entire state of the application is written to disk in yaml format&lt;/li&gt;
+&lt;li&gt;Projects, Scenes and Asset metadata can be loaded again to store the progress&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;technical-details&#34;&gt;Technical details
+&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;- Build system:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/premake/premake-core&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Premake5&lt;/a&gt; is used to generate project files on windows and linux&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;- Libraries used:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/g-truc/glm&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;glm&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/Politofr09/glfw&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;assimp&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/ocornut/imgui&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;imgui&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/Politofr09/glfw&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;glfw&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/nigels-com/glew&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;glew&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/jbeder/yaml-cpp&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;yaml-cpp&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

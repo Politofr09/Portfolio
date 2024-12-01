@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Trasteando on Portfolio</title>
+        <link>http://localhost:1313/es/categories/trasteando/</link>
+        <description>Recent content in Trasteando on Portfolio</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>es</language>
+        <copyright>Paul Tomás</copyright>
+        <lastBuildDate>Tue, 11 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/es/categories/trasteando/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Imágenes meteorológicas desde satélites</title>
+        <link>http://localhost:1313/es/projects/weather-images-from-space/</link>
+        <pubDate>Tue, 11 Jun 2024 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/es/projects/weather-images-from-space/</guid>
+        <description>&lt;img src="http://localhost:1313/projects/weather-images-from-space/featured.jpg" alt="Featured image of post Imágenes meteorológicas desde satélites" /&gt;&lt;h1 id=&#34;introducción&#34;&gt;Introducción
+&lt;/h1&gt;&lt;p&gt;Este verano me adentré en la radioafición con el &lt;a class=&#34;link&#34; href=&#34;https://www.rtl-sdr.com&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;RTL SDR&lt;/a&gt; que convierte tu PC en una radio. Con este adaptador barato y económico, puedes escuchar aviones, la radio local y, lo más importante, puedes escuchar satélites meteorológicos.&lt;/p&gt;
+&lt;h1 id=&#34;historia&#34;&gt;Historia
+&lt;/h1&gt;&lt;p&gt;Cuando escuché hablar de esto por primera vez, supe que tenía que probarlo. ¡Incluso hay personas que &lt;a class=&#34;link&#34; href=&#34;https://www.rtl-sdr.com/tag/sstv/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;reciben Imágenes desde la ISS!&lt;/a&gt;
+Cuando llegaron la antena y el adaptador sdr, me preparé rápidamente y esperé a que pasara el satélite para poder intentarlo.
+&lt;img src=&#34;http://localhost:1313/projects/weather-images-from-space/Failure1.jpg&#34;
+	width=&#34;2080&#34;
+	height=&#34;1188&#34;
+	srcset=&#34;http://localhost:1313/projects/weather-images-from-space/Failure1_hu4302622199806436631.jpg 480w, http://localhost:1313/projects/weather-images-from-space/Failure1_hu3430952329889595995.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Failure&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;175&#34;
+		data-flex-basis=&#34;420px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;Como podrás ver, esta imagen no vale para nada, porque intenté recibirla desde mi balcón. Rápidamente descubrí que para tener una buena señal, necesito cielo abierto.&lt;/p&gt;
+&lt;p&gt;Después de otros intentos fallidos, cambié de lugar y me fui al campo. Esta vez, obtuve una imagen bastante buena de NOAA 15:
+&lt;img src=&#34;http://localhost:1313/projects/weather-images-from-space/FirstSuccessful.jpg&#34;
+	width=&#34;909&#34;
+	height=&#34;1197&#34;
+	srcset=&#34;http://localhost:1313/projects/weather-images-from-space/FirstSuccessful_hu15447533629111667467.jpg 480w, http://localhost:1313/projects/weather-images-from-space/FirstSuccessful_hu1649761087771618619.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;75&#34;
+		data-flex-basis=&#34;182px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;Siempre recordaré lo feliz que estaba. ¡Acabo de recibir una imagen directamente desde un satélite! El resto del verano intenté escuchar más satélites y tratar de recibir imágenes más largas. Con mi hardware actual, solo puedo escuchar a los satélites NOAA y Meteor-M2. También hay &lt;a class=&#34;link&#34; href=&#34;https://en.wikipedia.org/wiki/Geostationary_orbit&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;satélites geoestacionarios&lt;/a&gt;, pero necesitaría una antena parabólica. Esto se debe a que los satélites geoestacionarios están mucho más lejos de la Tierra que los &lt;a class=&#34;link&#34; href=&#34;https://en.wikipedia.org/wiki/Polar_orbit&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;satélites de órbita polar&lt;/a&gt; (como NOAA y Meteor-M2).&lt;/p&gt;
+&lt;p&gt;No sólo eso sino que en Europa el satélite geoestacionario (Meteosat) que tenemos está encriptado y es imposible obtener nada desde allí.
+&lt;img src=&#34;http://localhost:1313/projects/weather-images-from-space/europe_doesn%27t_have_geostationary_satellites.png&#34;
+	width=&#34;850&#34;
+	height=&#34;427&#34;
+	srcset=&#34;http://localhost:1313/projects/weather-images-from-space/europe_doesn%27t_have_geostationary_satellites_hu15880398510409282361.png 480w, http://localhost:1313/projects/weather-images-from-space/europe_doesn%27t_have_geostationary_satellites_hu9308092860114428463.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;europe_doesn&amp;rsquo;t_have_geostationary_satellites&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;199&#34;
+		data-flex-basis=&#34;477px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h1 id=&#34;el-proceso&#34;&gt;El proceso
+&lt;/h1&gt;&lt;p&gt;Vamos a ver como esto es posible.&lt;/p&gt;
+&lt;p&gt;Los satélites en órbita polar orbitan de norte a sur y si le sumamos la rotación de la Tierra obtenemos este tipo de movimiento:
+&lt;img src=&#34;http://localhost:1313/projects/weather-images-from-space/Polar-orbit.gif&#34;
+	width=&#34;360&#34;
+	height=&#34;360&#34;
+	srcset=&#34;http://localhost:1313/projects/weather-images-from-space/Polar-orbit_hu7704475518305432036.gif 480w, http://localhost:1313/projects/weather-images-from-space/Polar-orbit_hu14227037859840489483.gif 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;100&#34;
+		data-flex-basis=&#34;240px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;Para recibir la señal del satélite, la antena en forma de V (ángulo de 120º) debe estar orientada al sur o al norte.&lt;/p&gt;
+&lt;p&gt;En cuanto al software, necesitamos usar una aplicación SDR como &lt;a class=&#34;link&#34; href=&#34;https://airspy.com&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Sdr#&lt;/a&gt; o &lt;a class=&#34;link&#34; href=&#34;https://www.sdrpp.org&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Sdr++&lt;/a&gt;.
+Aquí es donde &lt;strong&gt;se interactúa con el dongle SDR&lt;/strong&gt; y donde se sintoniza la frecuencia.
+Elegí Sdr++ porque funciona muy bien con Linux y es lo que tengo en mi portátil.&lt;/p&gt;
+&lt;p&gt;Además, necesitas algún tipo de programa que tome la señal grabada y la decodifique en una imagen. Para &lt;strong&gt;NOAA APT&lt;/strong&gt;, wxtoimg o noaa-apt funcionan bien.&lt;/p&gt;
+&lt;p&gt;Sin embargo, me resultó más cómodo usar &lt;a class=&#34;link&#34; href=&#34;https://github.com/SatDump/SatDump&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Satdump&lt;/a&gt;. Su interfaz puede parecer similar a la de sdr++ porque ambos usan ImGui (¡soy un gran admirador!). Pero satdump está más especializado en decodificar satélites. Ten en cuenta que todos usan una configuración física diferente (antena, adaptador, PC) y todos tienen diferentes preferencias de software.&lt;/p&gt;
+&lt;p&gt;En lo que se refiere a la decodificación de señales satelitales, la mayoría de los satélites utilizan codificación digital con corrección de errores y mayor resolución. Esto es lo que utiliza la serie Meteor. Sin embargo, también existe modulación analógica utilizada por NOAA 15, 18 y 19. Aunque también transmiten digitalmente en otras bandas, no puedo escucharlos con mi antena.&lt;/p&gt;
+&lt;p&gt;La razón por la que solo podemos escuchar estos satélites es porque transmiten imágenes en la banda de &lt;strong&gt;137 mhz&lt;/strong&gt;, y es en esa banda en la que está sintonizada nuestra antena. Puede que te preguntes: &amp;ldquo;¿Pero por qué tan pocos satélites operan en estas bandas?&amp;rdquo; Bueno, es porque es una banda bastante baja, lo que significa que otras estaciones terrestres pueden interferir con la señal.&lt;/p&gt;
+&lt;p&gt;También tenemos que ver cómo saber cuándo van a pasar los satélites por nuestra zona. Para eso utilizo &lt;a class=&#34;link&#34; href=&#34;https://oz9aec.dk/gpredict/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;gpredict&lt;/a&gt; o &lt;a class=&#34;link&#34; href=&#34;https://n2yo.com&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;n2yo&lt;/a&gt;. Estos programas también son muy útiles para saber si el satélite va a estar un buen rato en el cielo o si no.&lt;/p&gt;
+&lt;p&gt;Finalmente podemos echar un vistazo a cómo se codifica y decodifica la imagen. Suponiendo que tengamos una buena señal sin muchas interferencias, no debería de haber problemas. En realidad, tanto para la modulación digital como para la analógica, la imagen se envía por canales (r, g, b). &lt;strong&gt;NOAA APT&lt;/strong&gt; solo envía 2 canales, pero Meteor envía 3 canales, lo que da más precisión de color. Además, las imágenes de Meteor dan más detalles &lt;em&gt;(1 píxel / km)&lt;/em&gt; que &lt;strong&gt;NOAA&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;La ventaja de &lt;strong&gt;NOAA APT&lt;/strong&gt; es que incluso si no hay una buena señal, obtendrás una imagen con más o menos ruido. La señal digital de Meteor, por otro lado, utiliza corrección de errores para intentar resolver la interferencia, pero cuando falla, obtienes una línea negra.&lt;/p&gt;
+&lt;p&gt;¡Hecha un vistazo a las mejores imágenes que he recibido este verano!&lt;/p&gt;
+&lt;p&gt;Meteor-M2:
+En esta podemos ver claramente &lt;a class=&#34;link&#34; href=&#34;https://www.google.com/maps/place/44%c2%b039%2738.6%22N&amp;#43;1%c2%b010%2706.5%22W/@44.6834736,-1.2139958,50378m/data=!3m1!1e3!4m4!3m3!8m2!3d44.66072!4d-1.16848!5m1!1e4?entry=ttu&amp;amp;g_ep=EgoyMDI0MTExMy4xIKXMDSoASAFQAw%3D%3D&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Arcachon&lt;/a&gt; en Francia. (En realidad la imagen está comprimida y se pierden detalles más pequeños. Esto muestra cuánto detalle da Meteor)
+&lt;img src=&#34;http://localhost:1313/projects/weather-images-from-space/MeteorM2-2.jpg&#34;
+	width=&#34;2560&#34;
+	height=&#34;2121&#34;
+	srcset=&#34;http://localhost:1313/projects/weather-images-from-space/MeteorM2-2_hu4077324515141805565.jpg 480w, http://localhost:1313/projects/weather-images-from-space/MeteorM2-2_hu9880420203974892896.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Meteor M2&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;120&#34;
+		data-flex-basis=&#34;289px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;Esta también es bastante buena. Puedes ver Estambul y, si miras de cerca a Francia, ¡incluso puedes ver una zona gris donde se encuentra París!
+&lt;img src=&#34;http://localhost:1313/projects/weather-images-from-space/MeteorM2-3.jpg&#34;
+	width=&#34;2552&#34;
+	height=&#34;1813&#34;
+	srcset=&#34;http://localhost:1313/projects/weather-images-from-space/MeteorM2-3_hu2301271999512093400.jpg 480w, http://localhost:1313/projects/weather-images-from-space/MeteorM2-3_hu4550288543995076713.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Meteor M2&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;140&#34;
+		data-flex-basis=&#34;337px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;Ahora echemos un vistazo a la &lt;em&gt;imagen NOAA más larga que he tomado jamás&lt;/em&gt;:
+¡Podemos ver desde Groenlandia hasta las islas Canarias!
+&lt;img src=&#34;http://localhost:1313/projects/weather-images-from-space/NOAA19.jpg&#34;
+	width=&#34;881&#34;
+	height=&#34;1600&#34;
+	srcset=&#34;http://localhost:1313/projects/weather-images-from-space/NOAA19_hu4182467868895345671.jpg 480w, http://localhost:1313/projects/weather-images-from-space/NOAA19_hu9939628993292393791.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Longest NOAA&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;55&#34;
+		data-flex-basis=&#34;132px&#34;
+	
+&gt;&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

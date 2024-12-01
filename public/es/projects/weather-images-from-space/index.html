@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Cómo recibí imágenes directamente desde el espacio">
+<title>Imágenes meteorológicas desde satélites</title>
+
+<link rel='canonical' href='http://localhost:1313/es/projects/weather-images-from-space/'>
+
+<link rel="stylesheet" href="/scss/style.min.b9c8156d464c343bdacaf14a871581fb94cbbdb9dd5cbce4ba017361187cc930.css"><meta property='og:title' content="Imágenes meteorológicas desde satélites">
+<meta property='og:description' content="Cómo recibí imágenes directamente desde el espacio">
+<meta property='og:url' content='http://localhost:1313/es/projects/weather-images-from-space/'>
+<meta property='og:site_name' content='Portfolio'>
+<meta property='og:type' content='article'><meta property='article:section' content='Projects' /><meta property='article:published_time' content='2024-06-11T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2024-06-11T00:00:00&#43;00:00'/><meta property='og:image' content='http://localhost:1313/projects/weather-images-from-space/featured.jpg' />
+<meta name="twitter:title" content="Imágenes meteorológicas desde satélites">
+<meta name="twitter:description" content="Cómo recibí imágenes directamente desde el espacio"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='http://localhost:1313/projects/weather-images-from-space/featured.jpg' />
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column compact"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Ocultar menú">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/es/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu13739649187745961479.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/es">Portfolio</a></h1>
+            <h2 class="site-description">Una colección de proyectos que he hecho</h2>
+        </div>
+    </header><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/es/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Página principal</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+                    
+                        <li id="i18n-switch">  
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M4 5h7" />
+  <path d="M9 3v2c0 4.418 -2.239 8 -5 8" />
+  <path d="M5 9c-.003 2.144 2.952 3.908 6.7 4" />
+  <path d="M12 20l4 -9l4 9" />
+  <path d="M19.1 18h-6.2" />
+</svg>
+
+
+
+                            <select name="language" title="language" onchange="window.location.href = this.selectedOptions[0].value">
+                                
+                                    <option value="http://localhost:1313/" >English</option>
+                                
+                                    <option value="http://localhost:1313/es/" selected>Español</option>
+                                
+                            </select>
+                        </li>
+                    
+                
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>Modo oscuro</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/es/projects/weather-images-from-space/">
+                <img src="/projects/weather-images-from-space/featured_hu11630194255609016219.jpg"
+                        srcset="/projects/weather-images-from-space/featured_hu11630194255609016219.jpg 800w, /projects/weather-images-from-space/featured_hu3881002964721675480.jpg 1600w"
+                        width="800" 
+                        height="338" 
+                        loading="lazy"
+                        alt="Featured image of post Imágenes meteorológicas desde satélites" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/es/categories/trasteando/" >
+                Trasteando
+            </a>
+        
+            <a href="/es/categories/proyectos/" >
+                Proyectos
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/es/projects/weather-images-from-space/">Imágenes meteorológicas desde satélites</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            Cómo recibí imágenes directamente desde el espacio
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">jun. 11, 2024</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    Tiempo de lectura 4 minutos
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+        <footer class="article-translations">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M4 5h7" />
+  <path d="M9 3v2c0 4.418 -2.239 8 -5 8" />
+  <path d="M5 9c-.003 2.144 2.952 3.908 6.7 4" />
+  <path d="M12 20l4 -9l4 9" />
+  <path d="M19.1 18h-6.2" />
+</svg>
+
+
+
+            <div>
+                
+                    <a href="http://localhost:1313/projects/weather-images-from-space/" class="link">English</a>
+                
+            </div>
+        </footer>
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h1 id="introducción">Introducción
+</h1><p>Este verano me adentré en la radioafición con el <a class="link" href="https://www.rtl-sdr.com"  target="_blank" rel="noopener"
+    >RTL SDR</a> que convierte tu PC en una radio. Con este adaptador barato y económico, puedes escuchar aviones, la radio local y, lo más importante, puedes escuchar satélites meteorológicos.</p>
+<h1 id="historia">Historia
+</h1><p>Cuando escuché hablar de esto por primera vez, supe que tenía que probarlo. ¡Incluso hay personas que <a class="link" href="https://www.rtl-sdr.com/tag/sstv/"  target="_blank" rel="noopener"
+    >reciben Imágenes desde la ISS!</a>
+Cuando llegaron la antena y el adaptador sdr, me preparé rápidamente y esperé a que pasara el satélite para poder intentarlo.
+<img src="/projects/weather-images-from-space/Failure1.jpg"
+	width="2080"
+	height="1188"
+	srcset="/projects/weather-images-from-space/Failure1_hu4302622199806436631.jpg 480w, /projects/weather-images-from-space/Failure1_hu3430952329889595995.jpg 1024w"
+	loading="lazy"
+	
+		alt="Failure"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="175"
+		data-flex-basis="420px"
+	
+></p>
+<p>Como podrás ver, esta imagen no vale para nada, porque intenté recibirla desde mi balcón. Rápidamente descubrí que para tener una buena señal, necesito cielo abierto.</p>
+<p>Después de otros intentos fallidos, cambié de lugar y me fui al campo. Esta vez, obtuve una imagen bastante buena de NOAA 15:
+<img src="/projects/weather-images-from-space/FirstSuccessful.jpg"
+	width="909"
+	height="1197"
+	srcset="/projects/weather-images-from-space/FirstSuccessful_hu15447533629111667467.jpg 480w, /projects/weather-images-from-space/FirstSuccessful_hu1649761087771618619.jpg 1024w"
+	loading="lazy"
+	
+		alt="alt text"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="75"
+		data-flex-basis="182px"
+	
+></p>
+<p>Siempre recordaré lo feliz que estaba. ¡Acabo de recibir una imagen directamente desde un satélite! El resto del verano intenté escuchar más satélites y tratar de recibir imágenes más largas. Con mi hardware actual, solo puedo escuchar a los satélites NOAA y Meteor-M2. También hay <a class="link" href="https://en.wikipedia.org/wiki/Geostationary_orbit"  target="_blank" rel="noopener"
+    >satélites geoestacionarios</a>, pero necesitaría una antena parabólica. Esto se debe a que los satélites geoestacionarios están mucho más lejos de la Tierra que los <a class="link" href="https://en.wikipedia.org/wiki/Polar_orbit"  target="_blank" rel="noopener"
+    >satélites de órbita polar</a> (como NOAA y Meteor-M2).</p>
+<p>No sólo eso sino que en Europa el satélite geoestacionario (Meteosat) que tenemos está encriptado y es imposible obtener nada desde allí.
+<img src="/projects/weather-images-from-space/europe_doesn%27t_have_geostationary_satellites.png"
+	width="850"
+	height="427"
+	srcset="/projects/weather-images-from-space/europe_doesn%27t_have_geostationary_satellites_hu15880398510409282361.png 480w, /projects/weather-images-from-space/europe_doesn%27t_have_geostationary_satellites_hu9308092860114428463.png 1024w"
+	loading="lazy"
+	
+		alt="europe_doesn&rsquo;t_have_geostationary_satellites"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="199"
+		data-flex-basis="477px"
+	
+></p>
+<h1 id="el-proceso">El proceso
+</h1><p>Vamos a ver como esto es posible.</p>
+<p>Los satélites en órbita polar orbitan de norte a sur y si le sumamos la rotación de la Tierra obtenemos este tipo de movimiento:
+<img src="/projects/weather-images-from-space/Polar-orbit.gif"
+	width="360"
+	height="360"
+	srcset="/projects/weather-images-from-space/Polar-orbit_hu7704475518305432036.gif 480w, /projects/weather-images-from-space/Polar-orbit_hu14227037859840489483.gif 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="100"
+		data-flex-basis="240px"
+	
+></p>
+<p>Para recibir la señal del satélite, la antena en forma de V (ángulo de 120º) debe estar orientada al sur o al norte.</p>
+<p>En cuanto al software, necesitamos usar una aplicación SDR como <a class="link" href="https://airspy.com"  target="_blank" rel="noopener"
+    >Sdr#</a> o <a class="link" href="https://www.sdrpp.org"  target="_blank" rel="noopener"
+    >Sdr++</a>.
+Aquí es donde <strong>se interactúa con el dongle SDR</strong> y donde se sintoniza la frecuencia.
+Elegí Sdr++ porque funciona muy bien con Linux y es lo que tengo en mi portátil.</p>
+<p>Además, necesitas algún tipo de programa que tome la señal grabada y la decodifique en una imagen. Para <strong>NOAA APT</strong>, wxtoimg o noaa-apt funcionan bien.</p>
+<p>Sin embargo, me resultó más cómodo usar <a class="link" href="https://github.com/SatDump/SatDump"  target="_blank" rel="noopener"
+    >Satdump</a>. Su interfaz puede parecer similar a la de sdr++ porque ambos usan ImGui (¡soy un gran admirador!). Pero satdump está más especializado en decodificar satélites. Ten en cuenta que todos usan una configuración física diferente (antena, adaptador, PC) y todos tienen diferentes preferencias de software.</p>
+<p>En lo que se refiere a la decodificación de señales satelitales, la mayoría de los satélites utilizan codificación digital con corrección de errores y mayor resolución. Esto es lo que utiliza la serie Meteor. Sin embargo, también existe modulación analógica utilizada por NOAA 15, 18 y 19. Aunque también transmiten digitalmente en otras bandas, no puedo escucharlos con mi antena.</p>
+<p>La razón por la que solo podemos escuchar estos satélites es porque transmiten imágenes en la banda de <strong>137 mhz</strong>, y es en esa banda en la que está sintonizada nuestra antena. Puede que te preguntes: &ldquo;¿Pero por qué tan pocos satélites operan en estas bandas?&rdquo; Bueno, es porque es una banda bastante baja, lo que significa que otras estaciones terrestres pueden interferir con la señal.</p>
+<p>También tenemos que ver cómo saber cuándo van a pasar los satélites por nuestra zona. Para eso utilizo <a class="link" href="https://oz9aec.dk/gpredict/"  target="_blank" rel="noopener"
+    >gpredict</a> o <a class="link" href="https://n2yo.com"  target="_blank" rel="noopener"
+    >n2yo</a>. Estos programas también son muy útiles para saber si el satélite va a estar un buen rato en el cielo o si no.</p>
+<p>Finalmente podemos echar un vistazo a cómo se codifica y decodifica la imagen. Suponiendo que tengamos una buena señal sin muchas interferencias, no debería de haber problemas. En realidad, tanto para la modulación digital como para la analógica, la imagen se envía por canales (r, g, b). <strong>NOAA APT</strong> solo envía 2 canales, pero Meteor envía 3 canales, lo que da más precisión de color. Además, las imágenes de Meteor dan más detalles <em>(1 píxel / km)</em> que <strong>NOAA</strong>.</p>
+<p>La ventaja de <strong>NOAA APT</strong> es que incluso si no hay una buena señal, obtendrás una imagen con más o menos ruido. La señal digital de Meteor, por otro lado, utiliza corrección de errores para intentar resolver la interferencia, pero cuando falla, obtienes una línea negra.</p>
+<p>¡Hecha un vistazo a las mejores imágenes que he recibido este verano!</p>
+<p>Meteor-M2:
+En esta podemos ver claramente <a class="link" href="https://www.google.com/maps/place/44%c2%b039%2738.6%22N&#43;1%c2%b010%2706.5%22W/@44.6834736,-1.2139958,50378m/data=!3m1!1e3!4m4!3m3!8m2!3d44.66072!4d-1.16848!5m1!1e4?entry=ttu&amp;g_ep=EgoyMDI0MTExMy4xIKXMDSoASAFQAw%3D%3D"  target="_blank" rel="noopener"
+    >Arcachon</a> en Francia. (En realidad la imagen está comprimida y se pierden detalles más pequeños. Esto muestra cuánto detalle da Meteor)
+<img src="/projects/weather-images-from-space/MeteorM2-2.jpg"
+	width="2560"
+	height="2121"
+	srcset="/projects/weather-images-from-space/MeteorM2-2_hu4077324515141805565.jpg 480w, /projects/weather-images-from-space/MeteorM2-2_hu9880420203974892896.jpg 1024w"
+	loading="lazy"
+	
+		alt="Meteor M2"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="120"
+		data-flex-basis="289px"
+	
+></p>
+<p>Esta también es bastante buena. Puedes ver Estambul y, si miras de cerca a Francia, ¡incluso puedes ver una zona gris donde se encuentra París!
+<img src="/projects/weather-images-from-space/MeteorM2-3.jpg"
+	width="2552"
+	height="1813"
+	srcset="/projects/weather-images-from-space/MeteorM2-3_hu2301271999512093400.jpg 480w, /projects/weather-images-from-space/MeteorM2-3_hu4550288543995076713.jpg 1024w"
+	loading="lazy"
+	
+		alt="Meteor M2"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="140"
+		data-flex-basis="337px"
+	
+></p>
+<p>Ahora echemos un vistazo a la <em>imagen NOAA más larga que he tomado jamás</em>:
+¡Podemos ver desde Groenlandia hasta las islas Canarias!
+<img src="/projects/weather-images-from-space/NOAA19.jpg"
+	width="881"
+	height="1600"
+	srcset="/projects/weather-images-from-space/NOAA19_hu4182467868895345671.jpg 480w, /projects/weather-images-from-space/NOAA19_hu9939628993292393791.jpg 1024w"
+	loading="lazy"
+	
+		alt="Longest NOAA"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="55"
+		data-flex-basis="132px"
+	
+></p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">Contenidos relacionados</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/es/projects/game-engine/">
+        
+        
+            <div class="article-image">
+                <img src="/projects/game-engine/Screenshot-1.f954a79fc6b95f8e61d751375196e076_hu377074991320041289.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post Motor de videojuegos"
+                        
+                        data-hash="md5-&#43;VSnn8a5X45h11E3UZbgdg==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Motor de videojuegos</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2023 - 
+        
+        2024 Paul Tomás
+    </section>
+    
+    
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.ab5db2d40150d56215153a66afe15d4921c3cceaffcb4d25484cadc530cd962f.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
