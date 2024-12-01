@@ -222,23 +222,6 @@ We can see from Groenland to the Canary islands!
 &lt;/ul&gt;
 </description>
         </item>
-        <item>
-        <title>About</title>
-        <link>http://localhost:1313/page/about/</link>
-        <pubDate>Wed, 28 Feb 2024 00:00:00 +0000</pubDate>
-        
-        <guid>http://localhost:1313/page/about/</guid>
-        <description>&lt;h1 id=&#34;here-i-write-about-myself&#34;&gt;Here I write about myself
-&lt;/h1&gt;</description>
-        </item>
-        <item>
-        <title>Archives</title>
-        <link>http://localhost:1313/page/archives/</link>
-        <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
-        
-        <guid>http://localhost:1313/page/archives/</guid>
-        <description></description>
-        </item>
         
     </channel>
 </rss>

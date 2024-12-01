@@ -91,12 +91,42 @@
   </url><url>
     <loc>http://localhost:1313/page/about/</loc>
     <lastmod>2024-02-28T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://localhost:1313/es/page/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/page/about/"
+                />
   </url><url>
     <loc>http://localhost:1313/page/</loc>
     <lastmod>2024-02-28T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://localhost:1313/es/page/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/page/"
+                />
   </url><url>
     <loc>http://localhost:1313/page/archives/</loc>
-    <lastmod>2019-05-28T00:00:00+00:00</lastmod>
+    <lastmod>2023-05-28T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://localhost:1313/es/page/archives/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/page/archives/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
     <xhtml:link
