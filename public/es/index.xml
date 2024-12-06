@@ -156,7 +156,7 @@ En esta podemos ver claramente &lt;a class=&#34;link&#34; href=&#34;https://www.
         <pubDate>Mon, 11 Mar 2024 00:00:00 +0000</pubDate>
         
         <guid>http://localhost:1313/es/projects/game-engine/</guid>
-        <description>&lt;img src="http://localhost:1313/projects/game-engine/Screenshot-1.png" alt="Featured image of post Motor de videojuegos" /&gt;&lt;h2 id=&#34;descripción-y-por-qué&#34;&gt;Descripción y por qué?
+        <description>&lt;img src="http://localhost:1313/Banner.png" alt="Featured image of post Motor de videojuegos" /&gt;&lt;h2 id=&#34;descripción-y-por-qué&#34;&gt;Descripción y por qué?
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;El motor está diseñado para soportar renderizado 2D y 3D a través de OpenGL, con una interfaz de edición moderna y responsive. Es multiplataforma y funciona tanto en Windows como en Linux. Intento depender lo menos posible de código específico de plataformas. Actualmente, el motor admite serialización, renderizado básico y gestión de assets.&lt;/li&gt;
 &lt;li&gt;El objetivo principal de este motor es aprender sobre la arquitectura de los motores de juegos y ver cómo funcionan en en realidad.&lt;/li&gt;
@@ -174,21 +174,18 @@ En esta podemos ver claramente &lt;a class=&#34;link&#34; href=&#34;https://www.
 		data-flex-basis=&#34;456px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;h2 id=&#34;funciones-principales&#34;&gt;Funciones principales
-&lt;/h2&gt;&lt;div style=&#34;display: flex; align-items: center; gap: 1rem;&#34;&gt;
-  &lt;div&gt;
-    &lt;strong&gt;- Funciona en Windows y en Linux&lt;/strong&gt;
-    &lt;br&gt;
-    &lt;strong&gt;- Editor:&lt;/strong&gt;
-    &lt;ul&gt;
-      &lt;li&gt;Interfaz de usuario hecha con ImGui&lt;/li&gt;
-      &lt;li&gt;Al igual que con cualquier aplicación moderna, puedes acoplar y organizar las ventanas&lt;/li&gt;
-      &lt;li&gt;El panel de jerarquía de escenas se integra perfectamente con el ECS&lt;/li&gt;
-      &lt;li&gt;Funciones de arrastrar y soltar&lt;/li&gt;
-    &lt;/ul&gt;
-    &lt;/div&gt;
-&lt;img src=&#34;Logo.es.svg&#34; alt=&#34;&#34;&gt;&lt;/img&gt;
+&lt;div style=&#34;display: flex; align-items: center; gap: 1rem; justify-content: center;&#34;&gt;
+&lt;img src=&#34;Logo.es.svg&#34;&gt;&lt;/img&gt;
 &lt;/div&gt;
+&lt;h2 id=&#34;funciones-principales&#34;&gt;Funciones principales
+&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;- Funciona en windows y en linux&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;- Editor:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Interfaz de usuario hecha con ImGui&lt;/li&gt;
+&lt;li&gt;Al igual que con cualquier aplicación moderna, puedes acoplar y organizar las ventanas&lt;/li&gt;
+&lt;li&gt;El panel de jerarquía de escenas se integra perfectamente con el ECS&lt;/li&gt;
+&lt;li&gt;Funciones de arrastrar y soltar&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;- Gráficos:&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Renderizado basado en OpenGL&lt;/li&gt;

@@ -15,25 +15,20 @@ image = "Banner.svg"
 - The engine is designed support both 2D and 3D rendering through OpenGL, with a responsive and modern looking editor interface. It's cross platform, running on both Windows and Linux. I try to rely as less as possible on platform-specific code. Currently, the engine supports serialization, basic rendering and asset management.
 - The main purpose of this engine is to teach myself about game engine architecture and take a look at how they work under the hood.
 
-
 ## Screenshots
 ![](Screenshot-3.png)
-
-## Main Features
-<div style="display: flex; align-items: center; gap: 1rem;">
-  <div>
-    <strong>- Works on Windows and Linux</strong>
-    <br>
-    <strong>- Editor:</strong>
-    <ul>
-      <li>A responsive UI made with Dear ImGui</li>
-      <li>Like with any modern application, you can dock and arrange windows to your liking</li>
-      <li>The scene hierarchy panel integrates seamlessly with the ECS</li>
-      <li>Drag and drop features</li>
-    </ul>
-  </div>
-  <img src="Logo.svg" alt="Logo"></img>
+<div style="display: flex; align-items: center; gap: 1rem; justify-content: center;">
+<img src="Logo.svg"></img>
 </div>
+
+## Main features
+**- Works on windows and linux**
+
+**- Editor:**
+- A responsive UI made with dear ImGui
+- Like with any modern application, you can dock and arrange windows to your liking
+- The scene hierarchy panel integrates seamlessly with the ECS
+- Drag and drop features
 
 **- Graphics:**
 - OpenGL based rendering

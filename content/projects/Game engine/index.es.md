@@ -8,7 +8,7 @@ categories = [
     "C/C++",
     "Proyectos",
 ]
-image = "Screenshot-1.png"
+image = "Banner.png"
 +++
 
 ## Descripción y por qué?
@@ -17,22 +17,18 @@ image = "Screenshot-1.png"
 
 ## Capturas
 ![](Screenshot-3.png)
+<div style="display: flex; align-items: center; gap: 1rem; justify-content: center;">
+<img src="Logo.es.svg"></img>
+</div>
 
 ## Funciones principales
-<div style="display: flex; align-items: center; gap: 1rem;">
-  <div>
-    <strong>- Funciona en Windows y en Linux</strong>
-    <br>
-    <strong>- Editor:</strong>
-    <ul>
-      <li>Interfaz de usuario hecha con ImGui</li>
-      <li>Al igual que con cualquier aplicación moderna, puedes acoplar y organizar las ventanas</li>
-      <li>El panel de jerarquía de escenas se integra perfectamente con el ECS</li>
-      <li>Funciones de arrastrar y soltar</li>
-    </ul>
-    </div>
-<img src="Logo.es.svg" alt=""></img>
-</div>
+**- Funciona en windows y en linux**
+
+**- Editor:**
+- Interfaz de usuario hecha con ImGui
+- Al igual que con cualquier aplicación moderna, puedes acoplar y organizar las ventanas
+- El panel de jerarquía de escenas se integra perfectamente con el ECS
+- Funciones de arrastrar y soltar
 
 **- Gráficos:**
 - Renderizado basado en OpenGL
