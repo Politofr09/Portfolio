@@ -8,7 +8,7 @@ categories = [
     "C/C++",
     "Projects",
 ]
-image = "Screenshot-1.png"
+image = "Banner.svg"
 +++
 
 ## Description & Why?
@@ -19,14 +19,21 @@ image = "Screenshot-1.png"
 ## Screenshots
 ![](Screenshot-3.png)
 
-## Main features
-**- Works on windows and linux**
-
-**- Editor:**
-- A responsive UI made with dear ImGui
-- Like with any modern application, you can dock and arrange windows to your liking
-- The scene hierarchy panel integrates seamlessly with the ECS
-- Drag and drop features
+## Main Features
+<div style="display: flex; align-items: center; gap: 1rem;">
+  <div>
+    <strong>- Works on Windows and Linux</strong>
+    <br>
+    <strong>- Editor:</strong>
+    <ul>
+      <li>A responsive UI made with Dear ImGui</li>
+      <li>Like with any modern application, you can dock and arrange windows to your liking</li>
+      <li>The scene hierarchy panel integrates seamlessly with the ECS</li>
+      <li>Drag and drop features</li>
+    </ul>
+  </div>
+  <img src="Logo.svg" alt="Logo"></img>
+</div>
 
 **- Graphics:**
 - OpenGL based rendering

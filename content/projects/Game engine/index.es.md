@@ -19,13 +19,20 @@ image = "Screenshot-1.png"
 ![](Screenshot-3.png)
 
 ## Funciones principales
-**- Funciona en windows y en linux**
-
-**- Editor:**
-- Interfaz de usuario hecha con ImGui
-- Al igual que con cualquier aplicación moderna, puedes acoplar y organizar las ventanas
-- El panel de jerarquía de escenas se integra perfectamente con el ECS
-- Funciones de arrastrar y soltar
+<div style="display: flex; align-items: center; gap: 1rem;">
+  <div>
+    <strong>- Funciona en Windows y en Linux</strong>
+    <br>
+    <strong>- Editor:</strong>
+    <ul>
+      <li>Interfaz de usuario hecha con ImGui</li>
+      <li>Al igual que con cualquier aplicación moderna, puedes acoplar y organizar las ventanas</li>
+      <li>El panel de jerarquía de escenas se integra perfectamente con el ECS</li>
+      <li>Funciones de arrastrar y soltar</li>
+    </ul>
+    </div>
+<img src="Logo.es.svg" alt=""></img>
+</div>
 
 **- Gráficos:**
 - Renderizado basado en OpenGL
@@ -38,7 +45,7 @@ image = "Screenshot-1.png"
 
 **- Serialización:**
 - Todo el estado de la aplicación se escribe en el disco en formato yaml
-- Los proyectos, las escenas y los metadatos de los activos se pueden volver a cargar para almacenar el progreso
+- Los proyectos, las escenas y los metadatos de los assets se pueden volver a cargar para almacenar el progreso
 
 ## Detalles técnicos
 **- Build system:**

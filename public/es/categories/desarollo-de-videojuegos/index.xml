@@ -32,14 +32,20 @@
 	
 &gt;&lt;/p&gt;
 &lt;h2 id=&#34;funciones-principales&#34;&gt;Funciones principales
-&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;- Funciona en windows y en linux&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;- Editor:&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Interfaz de usuario hecha con ImGui&lt;/li&gt;
-&lt;li&gt;Al igual que con cualquier aplicación moderna, puedes acoplar y organizar las ventanas&lt;/li&gt;
-&lt;li&gt;El panel de jerarquía de escenas se integra perfectamente con el ECS&lt;/li&gt;
-&lt;li&gt;Funciones de arrastrar y soltar&lt;/li&gt;
-&lt;/ul&gt;
+&lt;/h2&gt;&lt;div style=&#34;display: flex; align-items: center; gap: 1rem;&#34;&gt;
+  &lt;div&gt;
+    &lt;strong&gt;- Funciona en Windows y en Linux&lt;/strong&gt;
+    &lt;br&gt;
+    &lt;strong&gt;- Editor:&lt;/strong&gt;
+      &lt;ul&gt;
+        &lt;li&gt;Interfaz de usuario hecha con ImGui&lt;/li&gt;
+        &lt;li&gt;Al igual que con cualquier aplicación moderna, puedes acoplar y organizar las ventanas&lt;/li&gt;
+        &lt;li&gt;El panel de jerarquía de escenas se integra perfectamente con el ECS&lt;/li&gt;
+        &lt;li&gt;Funciones de arrastrar y soltar&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+&lt;img src=&#34;Logo.svg&#34; alt=&#34;&#34;&gt;&lt;/img&gt;
+&lt;/div&gt;
 &lt;p&gt;&lt;strong&gt;- Gráficos:&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Renderizado basado en OpenGL&lt;/li&gt;

@@ -156,7 +156,7 @@ We can see from Groenland to the Canary islands!
         <pubDate>Mon, 11 Mar 2024 00:00:00 +0000</pubDate>
         
         <guid>http://localhost:1313/projects/game-engine/</guid>
-        <description>&lt;img src="http://localhost:1313/projects/game-engine/Screenshot-1.png" alt="Featured image of post Game Engine" /&gt;&lt;h2 id=&#34;description--why&#34;&gt;Description &amp;amp; Why?
+        <description>&lt;img src="http://localhost:1313/projects/game-engine/Banner.svg" alt="Featured image of post Game Engine" /&gt;&lt;h2 id=&#34;description--why&#34;&gt;Description &amp;amp; Why?
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;The engine is designed support both 2D and 3D rendering through OpenGL, with a responsive and modern looking editor interface. It&amp;rsquo;s cross platform, running on both Windows and Linux. I try to rely as less as possible on platform-specific code. Currently, the engine supports serialization, basic rendering and asset management.&lt;/li&gt;
 &lt;li&gt;The main purpose of this engine is to teach myself about game engine architecture and take a look at how they work under the hood.&lt;/li&gt;
@@ -174,15 +174,21 @@ We can see from Groenland to the Canary islands!
 		data-flex-basis=&#34;456px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;h2 id=&#34;main-features&#34;&gt;Main features
-&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;- Works on windows and linux&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;- Editor:&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;A responsive UI made with dear ImGui&lt;/li&gt;
-&lt;li&gt;Like with any modern application, you can dock and arrange windows to your liking&lt;/li&gt;
-&lt;li&gt;The scene hierarchy panel integrates seamlessly with the ECS&lt;/li&gt;
-&lt;li&gt;Drag and drop features&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h2 id=&#34;main-features&#34;&gt;Main Features
+&lt;/h2&gt;&lt;div style=&#34;display: flex; align-items: center; gap: 1rem;&#34;&gt;
+  &lt;div&gt;
+    &lt;strong&gt;- Works on Windows and Linux&lt;/strong&gt;
+    &lt;br&gt;
+    &lt;strong&gt;- Editor:&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;A responsive UI made with Dear ImGui&lt;/li&gt;
+      &lt;li&gt;Like with any modern application, you can dock and arrange windows to your liking&lt;/li&gt;
+      &lt;li&gt;The scene hierarchy panel integrates seamlessly with the ECS&lt;/li&gt;
+      &lt;li&gt;Drag and drop features&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+  &lt;img src=&#34;Logo.svg&#34; alt=&#34;Logo&#34;&gt;&lt;/img&gt;
+&lt;/div&gt;
 &lt;p&gt;&lt;strong&gt;- Graphics:&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;OpenGL based rendering&lt;/li&gt;
